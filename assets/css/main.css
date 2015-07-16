@@ -4908,12 +4908,12 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
     border-bottom: 1px solid #ddd;
 }
 .panel-default {
-    border-color: #ddd;
+    border-color: #bbb;
 }
 .panel-default>.panel-heading {
     color: #333;
     background-color: #f5f5f5;
-    border-color: #ddd;
+    border-color: #bbb;
 }
 .panel-default>.panel-heading+.panel-collapse .panel-body {
     border-top-color: #ddd;
@@ -5699,7 +5699,8 @@ h4 {
 h5 {
     font-size: 14px;
 }
-}@media (max-width:768px) {
+}
+@media (max-width:768px) {
     h1, h2 {
     font-size: 24px;
     line-height: 26px;
@@ -5889,11 +5890,11 @@ h3 {
 }
 @media (max-width:767px) {
     .section-hero .site-logo {
-    	margin-bottom: 52px;
-	}
-	.section-hero .site-logo img {
-    	max-height: 104px;
-	}
+        margin-bottom: 52px;
+    }
+    .section-hero .site-logo img {
+        max-height: 104px;
+    }
 }
 
 @media (max-width:1200px) {
