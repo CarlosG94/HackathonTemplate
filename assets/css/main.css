@@ -6360,17 +6360,11 @@ h3 {
     line-height: 26px;
     padding: 52px 0;
 }
-.site-footer .back-to-top {
-    width: 52px;
-    height: 52px;
-    line-height: 45px;
-    margin: -78px auto 26px;
+.site-footer .htw-logo {
+    line-height: 80px;
+    margin: -30px auto 26px;
     display: block;
-    font-size: 28px;
     text-align: center;
-    background: #e74c3c;
-    color: #fff;
-    border-radius: 26px;
 }
 .project-modal .close {
     width: 26px;
