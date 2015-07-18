@@ -5808,6 +5808,7 @@ h3 {
 }.section .section-header {
     text-align: center;
     margin-bottom: 52px;
+    margin-top: -50px;
 }
 @media (max-width:767px) {
     .section .section-header {
@@ -6043,6 +6044,7 @@ h3 {
 }
 }.section-portfolio {
     padding-bottom: 78px;
+    margin-bottom: 50px;
 }
 .section-portfolio .project {
     margin-bottom: 26px;
