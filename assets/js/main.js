@@ -11,6 +11,31 @@
     });
   });
 
+  //map
+
+  function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(44.5403, -78.5463),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          scrollwheel: false,
+          scaleControl: false,
+          mapTypeControl: false
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+
+  options = $.extend({
+    scrollwheel: false,
+    navigationControl: false,
+    mapTypeControl: false,
+    scaleControl: false,
+    draggable: false,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+}, options);
+
   // One Page Navigation Setup
   $('.one-page-nav #navigation').singlePageNav({
     offset: $('.one-page-nav').outerHeight(),
@@ -59,6 +84,19 @@
       resizable: true,
       resizesContainer: true
     });
+  });
+
+  $('section#challenge a').on('click', function(){
+    $('#project-modal img').attr('src', $(this).attr('data-image-url'));
+    if ($(this).attr('data') == "texto1") {
+         $('#project-modal p.prueba').html('Esto es el texto del reto 1.');
+    }
+    if ($(this).attr('data') == "texto2") {
+         $('#project-modal p.prueba').html('Esto es el texto del reto 2');
+    }
+    // if(){
+    //   $('#project-modal p.prueba').html('Así se puede hacer un texto dinámico chinga!');
+    // }
   });
 
   // filter items when filter link is clicked
