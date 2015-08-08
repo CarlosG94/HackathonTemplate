@@ -19,22 +19,20 @@
           center: new google.maps.LatLng(19.3594418,-99.258399),
           zoom: 8,
           mapTypeId: google.maps.MapTypeId.ROADMAP,
-          scrollwheel: false,
-          scaleControl: false,
-          mapTypeControl: false
+          scrollwheel: false
         }
         var map = new google.maps.Map(mapCanvas, mapOptions)
       }
       google.maps.event.addDomListener(window, 'load', initialize);
 
-  options = $.extend({
-    scrollwheel: false,
-    navigationControl: false,
-    mapTypeControl: false,
-    scaleControl: false,
-    draggable: false,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-}, options);
+//   options = $.extend({
+//     scrollwheel: false,
+//     navigationControl: false,
+//     mapTypeControl: false,
+//     scaleControl: false,
+//     draggable: false,
+//     mapTypeId: google.maps.MapTypeId.ROADMAP
+// }, options);
 
   // One Page Navigation Setup
   $('.one-page-nav #navigation').singlePageNav({
