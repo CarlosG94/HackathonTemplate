@@ -1,3 +1,20 @@
+$(document).ready(function(){
+  var nav= $('.navbar-fixed-top');
+  var distancia = $('.navbar-fixed-top').offset();
+  if (distancia.top > 0) {
+    nav.removeClass('normal').addClass('efecto');
+  }
+  $(window).scroll(function(){
+    var scroll= $(window).scrollTop();
+
+    if(scroll >= 600){
+      nav.removeClass('normal').addClass('efecto');
+    } else{
+      nav.removeClass('efecto').addClass('normal');
+    }
+  });
+});
+
 (function($) {
   "use strict";
   // Add "loaded" class when a section has been loaded
@@ -87,10 +104,16 @@
   $('section#challenge a').on('click', function(){
     $('#project-modal img').attr('src', $(this).attr('data-image-url'));
     if ($(this).attr('data') == "texto1") {
-         $('#project-modal p.prueba').html('Esto es el texto del reto 1.');
+        $('#project-modal h3.project-title').html('Reto 1');
+        $('#project-modal p.prueba').html('Esto es el texto del reto 1.');
     }
     if ($(this).attr('data') == "texto2") {
          $('#project-modal p.prueba').html('Esto es el texto del reto 2');
+         $('#project-modal h3.project-title').html('Reto 2');
+    }
+    if ($(this).attr('data') == "texto3") {
+         $('#project-modal p.prueba').html('Esto es el texto del reto 3');
+         $('#project-modal h3.project-title').html('Reto 3');
     }
     // if(){
     //   $('#project-modal p.prueba').html('Así se puede hacer un texto dinámico chinga!');

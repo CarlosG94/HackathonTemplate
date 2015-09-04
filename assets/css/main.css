@@ -1,3 +1,65 @@
+/*Temp*/
+
+.header-image{
+    height: 30px;
+}
+
+.navbar-default {
+    box-shadow: none;
+    background-color: transparent;
+    border: none;
+    background-image: none;
+    min-height: 30px;
+    max-height: 30px;
+}
+
+.nav>li>a {
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: .95em;
+    font-weight: 200;
+    /*text-shadow: 1px 1px 1px black;
+    -webkit-text-shadow: 1px 1px 1px black;
+    -moz-text-shadow: 1px 1px 1px black;*/
+}
+
+.nav>li>a:hover,
+.nav>li>a:focus{
+    background-color: transparent;
+}
+
+.top{
+    padding-top: 5px;
+}
+
+.normal{
+    transition: 1s all ease;
+     background-color: transparent;
+}
+
+.efecto{
+    background-color: #123156;
+    min-height: 30px;
+    max-height: 65px;
+    box-shadow: 0 0 10px black;
+    padding-top: 0;
+    transition: 1s all ease;
+}
+
+
+/* End Temp*/
+
+/* Media Queries*/
+@media(max-width: 500px){
+    section#challenges .col-sm-4{
+        padding-left: 5px !important ;
+        padding-left: 5px !important;
+    }
+    .section-pricing-table .panel-body {
+        padding: 0,0,0,0; }
+}
+
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400);
     @font-face {
     font-family: 'Lato', sans-serif;
@@ -7,6 +69,41 @@
     font-style: normal;
 }
 
+section#agenda {
+    min-height:600px;
+ /*   background-color: black;*/
+}
+
+section#agenda .table{
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+section#agenda .col-md-4{
+    color: white;
+}
+
+section#agenda .top{
+    width: 100%;
+    border: 2px solid;
+}
+
+section#agenda .mid{
+    width: 100%;
+    border-left: 2px solid;
+    border-right: 2px solid;
+}
+
+section#agenda .bottom{
+    width: 100%;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+}
+
+section#sponsors{
+    height: 600px;
+}
 
 .normal{
     transition: 1s all ease;
@@ -4085,9 +4182,6 @@ textarea.input-group-sm>.form-control, textarea.input-group-sm>.input-group-addo
 .navbar-text.navbar-right:last-child {
     margin-right: 0;
 }
-}.navbar-default {
-    background-color: #f8f8f8;
-    border-color: #e7e7e7;
 }
 .navbar-default .navbar-brand {
     color: #777;
@@ -5833,6 +5927,7 @@ h3 {
     .section .section-header {
     margin-bottom: 26px;
 }
+
 }.section .section-title {
     font-family: 'Lato', sans-serif;
     margin: 0;
@@ -6439,3 +6534,9 @@ h3 {
 .project-modal .project-description p:last-child {
     margin-bottom: 0;
 }
+
+section#top{
+    height: 650px;
+}
+
+
